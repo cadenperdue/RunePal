@@ -1,6 +1,11 @@
+@font-face{
+    font-family: runescape;
+    src: url(runescape_uf.ttf);
+}
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'runescape';
 }
 body{
     background-color: #D3D3D3;
@@ -54,7 +59,7 @@ nav{
     padding-right: 20px;
     color: white;    
     border-right: 1px solid white;
-    font-family: sans-serif;
+    font-family: runescape;
     font-size: 10px;
 }
 #firstli{
@@ -65,21 +70,21 @@ nav{
     margin-right: 25%;
     background-color: #8B0000;
     font-size: 12;
-    font-family: sans-serif;
+    //font-family: sans-serif;
     border-radius: 25px;
 }
 #subNavBar a{
     text-decoration: none;
     color: black;
     font-size: 12px;
-    font-family: sans-serif;
+    //font-family: sans-serif;
     padding: 15px;
 }
 #logo{
     position: absolute;
     top: 10px; 
     right: 30%;
-    width: 5%;
+    width: 10%;
     height: 5%;
 }
 #IRD{
@@ -100,12 +105,19 @@ nav{
     align-items: center;
     min-width: 0;
     min-height: 0;
+    color: white;
+    //background-color: #2D2D2D;
 
+}
+.flexHead{
+    color: white;
+   //ackground-color: #2D2D2D;
+   margin-left: 5px;
 }
 
 #farmFlex{
     color: black;
-    background-color: #8B0000;
+    background-color: #2D2D2D;
     height: 200px;
     width: 80%;
     //padding: 20px;
@@ -117,7 +129,7 @@ nav{
 
 #stashFlex{
     color: black;
-    background-color: #8B0000;
+    background-color: #2D2D2D;
     height: 200px;
     width: 80%;
     //padding: 20px;
@@ -129,7 +141,7 @@ nav{
 
 #prayFlex{
     color: black;
-    background-color: #8B0000;
+    background-color: #2D2D2D;
     height: 200px;
     width: 80%;
     //padding: 20px;

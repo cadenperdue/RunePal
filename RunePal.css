@@ -1,11 +1,11 @@
 @font-face{
     font-family: runescape;
-    src: url(runescape_uf.ttf);
+    src: url('runescape_uf.ttf');
 }
 *{
     margin: 0px;
     padding: 0px;
-    font-family: 'runescape';
+    font-family: "runescape", Helvetica;
 }
 body{
     background-color: #D3D3D3;
@@ -18,7 +18,6 @@ body{
 h1, h2{
     margin-left: 25%;
     margin-right: 25%;
-    font-family: serif;
     font-weight: normal;
     margin-top: 0px;
 }
@@ -59,7 +58,6 @@ nav{
     padding-right: 20px;
     color: white;    
     border-right: 1px solid white;
-    font-family: runescape;
     font-size: 10px;
 }
 #firstli{
@@ -85,7 +83,7 @@ nav{
     top: 10px; 
     right: 30%;
     width: 10%;
-    height: 5%;
+    height: 7.5%;
 }
 #IRD{
     font-size: 48px;

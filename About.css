@@ -33,18 +33,15 @@ nav{
     height: 40px;
     float: left;
     padding-left: 25%;
+    padding-right: 25%;
     list-style: none;
     color: white;
     background-color: #2D2D2D;
 }
-.menu{
-    margin: 0;
-    padding: 0;
-    color: white;
-}
 #navBar{
-    display: flex; 
-    font-size: 12px;
+    margin:0;
+    padding: 0;
+    display: inline-block;
 }
 .liNav{
     font-size: 10px;
@@ -88,5 +85,14 @@ nav{
     font-size: 24px;
      
 }
-
-
+#header{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+.desc{
+    text-align: center;
+    margin-right: 5%;
+    margin-left: 5%;
+}

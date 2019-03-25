@@ -16,13 +16,23 @@ h1, h2{
     margin-right: 25%;
     font-weight: normal;
     margin-top: 0px;
+    margin-bottom: 10px;
 }
 
-h1 a, h2 a{
-    color: black;
+h1 a{
     text-decoration: none;
+    color: black;
 }
-
+#titleLink{
+    text-decoration: none;
+    color: black;
+}
+#loginAndRegister{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 10px;
+}
 .liNav a{
     color: white;
     text-decoration: none;
@@ -30,6 +40,8 @@ h1 a, h2 a{
 }
 nav{
     width: 100%;
+    margin-right: 0;
+    margin-left: 0;
     height: 40px;
     float: left;
     padding-left: 25%;
@@ -86,4 +98,7 @@ nav{
      
 }
 
-
+.info{
+    text-decoration: underline;
+    color: black;
+}

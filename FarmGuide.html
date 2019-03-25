@@ -1,4 +1,4 @@
-<!doctype html>
+s<!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -18,6 +18,9 @@
             </h1>
             <h2 id="university-title"><a href="RunePal.html" title="Homepage">An OSRS Companion Website</a>
             </h2>
+            <p id = "loginAndRegister">
+                <a id = "login" href = "login.php">Login</a> | <a id = "register" href = "register.php">Register</a>
+            </p>
         </hgroup>
      </header>
 
@@ -26,7 +29,7 @@
         <ul id = "navBar">
         <li class = "liNav" id = "firstli"><a href = "FarmGuide.html">Farming</a></li>
          <li class = "liNav"><a href = "STASHUnit.html">STASHUnits</a></li>
-         <li class = "liNav"><a href = "PrayFlick.html">Flicking</a></li>
+         <li class = "liNav"><a href = "PrayFlick.php">Flicking</a></li>
          <li class = "liNav"><a href="About.html">About</a></li>
         <li class = "liNav"><a href="Contact.html">Contact</a></li>        
        </ul>
@@ -44,6 +47,27 @@
     
     <!-- Search By -->
     <h2 id = "IRD">Welcome To Our Farming Route Guide</h2>
+    
+    <br><br>
+
+    <div id = "inputInfo">
+    <p class = "formHead"> First, select which types of patches you'll be visting</p>
+        <form class = "farms"> 
+            <input type="checkbox" class = "regular-checkbox" id="herbs" value ="herbs">Herbs/Flowers/Allotments<br> 
+            <input type="checkbox" class = "regular-checkbox" id="trees" value="trees">Trees<br>
+            <input type="checkbox" class = "regular-checkbox" id="fruitTrees" value="fruitTrees">Fruit Trees<br>
+            <input type="checkbox" class = "regular-checkbox" id="hops" value="hops">Hops<br>
+            <input type="checkbox" class = "regular-checkbox" id="bush" value="bush">Bush<br>
+            <input type="checkbox" class = "regular-checkbox" id="cactus" value="cactus">Cactus<br>
+            <input type="checkbox" class = "regular-checkbox" id="special" value="special">Misc.<br>
+            <input type="button" class = "submitButton" id="submitButton" value="Submit">
+        </form>
+   
+    </div>
+
+
+
+
 
 </body>
 </html>

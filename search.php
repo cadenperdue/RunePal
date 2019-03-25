@@ -3,6 +3,9 @@
     
     error_reporting(E_ALL) ; ini_set('display_erros',1);
     $attkSpeed;
+    $dmgType;
+    $name;
+    $varSpeed;
 
  
     if(isset($_GET['keywords'])){
@@ -14,7 +17,7 @@
             WHERE name LIKE '%{$keywords}%' 
           ");
          $speed = $link->query("
-            SELECT speed
+            SELECT speed, name, var_speed, type
             FROM monsters
             WHERE name LIKE '%{$keywords}%'
           ");
@@ -24,6 +27,9 @@
          $row = mysqli_fetch_array($speed, MYSQLI_NUM);
         
         $attkSpeed = $row[0];
+        $name = $row[1];
+        $varSpeed = $row[2];
+        $dmgType = $row[3];
     }
 
 
@@ -79,15 +85,13 @@
 
 
 	    <div class = "result-count">
-        	Found <?php echo $query->num_rows; ?> results where attack speed = <span id = "attkSpeed"> <?php echo $attkSpeed; ?> </span>            
+        	Found <?php echo $query->num_rows; ?> results for <span id = "name"> <?php echo $name; ?> </span> with attack speed equal to<span id = "attkSpeed"> <?php echo $attkSpeed; ?> </span>.
+            <br>
+            This creature attacks with <span id = "attackType"><?php echo $dmgType; ?></span>             
     	</div>
-        <p id = "putHere">
-            where is it
-        </p>
-        <p id = "here">
-        
-        </p>    
-
+            
+        <div id = "icon">
+        </div>
 <script src = "PrayFlick.js"></script>
 </body>
 </html>

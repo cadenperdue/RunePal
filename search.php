@@ -90,8 +90,8 @@
             This creature attacks with <span id = "attackType"><?php echo $dmgType; ?></span>             
     	</div>
             
-        <div id = "icon">
-        </div>
+        <div id = "icon"></div>
+        <div id = "iconOn"></div>
 <script src = "PrayFlick.js"></script>
 </body>
 </html>

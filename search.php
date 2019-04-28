@@ -66,7 +66,7 @@
         <ul id = "navBar">
         <li class = "liNav" id = "firstli"><a href = "FarmGuide.html">Farming</a></li>
          <li class = "liNav"><a href = "STASHUnit.html">STASHUnits</a></li>
-         <li class = "liNav"><a href = "PrayFlick.html">Flicking</a></li>
+         <li class = "liNav"><a href = "PrayFlick.php">Flicking</a></li>
          <li class = "liNav"><a href="About.html">About</a></li>
         <li class = "liNav"><a href="Contact.html">Contact</a></li>
         </ul>

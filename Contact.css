@@ -39,11 +39,13 @@ h1 a{
     font-size: 18px;
 }
 nav{
-    width: 100%;
-    margin-right: 0;
+    /*
+    float: left;
+    margin-right: 1%;
+    */
     margin-left: 0;
     height: 40px;
-    float: left;
+   
     padding-left: 25%;
     padding-right: 25%;
     list-style: none;
@@ -51,9 +53,12 @@ nav{
     background-color: #2D2D2D;
 }
 #navBar{
-    margin:0;
+    margin: 0;
     padding: 0;
+    /*
     display: inline-block;
+    */
+    white-space:nowrap;
 }
 .liNav{
     font-size: 10px;
@@ -64,6 +69,7 @@ nav{
     color: white;    
     border-right: 1px solid white;
     font-size: 10px;
+    display: inline-block;
 }
 #firstli{
     border-left: 1px solid white;
@@ -73,7 +79,8 @@ nav{
     margin-right: 25%;
     background-color: #8B0000;
     font-size: 12;
-    border-radius: 25px;
+    border-bottom-left-radius:25px;
+    border-bottom-right-radius:25px;
 }
 #subNavBar a{
     text-decoration: none;

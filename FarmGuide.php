@@ -1,0 +1,106 @@
+<?php
+    require_once 'config.php';
+   session_start();
+?>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>RunePal</title>
+    <link rel='stylesheet' href='FarmGuide.css'>
+</head>
+<body>
+
+
+
+<!-- Links/Title goes here -->
+    <div id = "topBorder"></div>
+ 	<header class="inner clearfix">
+        <hgroup>
+            <img id = "logo" src = "images/OSRS.png">
+            <h1 id="site-title"><a href="RunePal.php" title="Homepage">RunePal</a>
+            </h1>
+            <h2 id="university-title"><a href="RunePal.php" title="Homepage">An OSRS Companion Website</a>
+            </h2>
+            <p id = "loginAndRegister">
+                <?php if(isset($_SESSION['id'])): ?>
+                    <a class="link" href="logout.php" style="text-decoration:none">Logout</a>
+                <?php else: ?>
+                    <a class="link" href="login.php" style="text-decoration:none">Login</a> | <a href = "register.php"> Register </a>
+                <?php endif; ?>
+            </p>
+        </hgroup>
+     </header>
+
+    <div>
+    <nav>
+        <ul id = "navBar">
+        <li class = "liNav" id = "firstli"><a href = "FarmGuide.php">Farming</a></li>
+         <li class = "liNav"><a href = "STASHUnit.php">STASHUnits</a></li>
+         <li class = "liNav"><a href = "PrayFlick.php">Flicking</a></li>
+         <li class = "liNav"><a href="About.php">About</a></li>
+        <li class = "liNav"><a href="Contact.php">Contact</a></li>        
+       </ul>
+    </nav>
+    </div>
+    <div id = "subNavBar"> 
+        
+        <a href="http://student2.cs.appstate.edu/perdueca/RunePal/RunePal.php">Home</a> 
+        &#62;
+        <a href="FarmGuide.php">Farm Routes</a>
+
+    </div>
+    
+    <!-- Other pages have a back button here -->
+    
+    <!-- Search By -->
+    <h2 id = "IRD">Welcome To Our Farming Route Guide</h2>
+    
+    <br><br>
+
+    <div id = "inputInfo">
+    <p class = "formHead"> First, select the types and locations of the patches you'll be visiting.</p>
+        <form class = "farms" method = "get" action = "formHandlers/farmForm.php"> 
+            <input type="checkbox" class = "regular-checkbox" id="herbs" value ="herbs">Herbs/Flowers/Allotments<br>
+                <div class = "herbLocations">
+                    <span> &nbsp; &nbsp; <input type="checkbox" class = "regular-checkbox" id="sFalador" name = 1 value ="fallyHerb"> Patches South of Falador </span><br>
+                    <span> &nbsp; &nbsp; <input type="checkbox" class = "regular-checkbox" id="wEcto" name = 2 value ="ectoHerb"> Patches West of the Ectofuntus </span><br>
+                    <span> &nbsp; &nbsp; <input type="checkbox" class = "regular-checkbox" id="sCatherby" name = 3 value ="catherbyHerb"> Patches North of Catherby </span><br>
+                    <span> &nbsp; &nbsp; <input type="checkbox" class = "regular-checkbox" id="nArdy" name = 4 value ="ardyHerb"> Patches North of Ardougne </span><br>
+                    <span> &nbsp; &nbsp; <input type="checkbox" class = "regular-checkbox" id="sHosi" name = 5 value ="hosiHerb"> Patches in Southeast of Hosidius </span><br>
+                    <span> &nbsp; &nbsp; <input type="checkbox" class = "regular-checkbox" id="herbGuild" name = 6 value ="guildHerb"> Patches in Farming Guild </span><br>
+                    <span> &nbsp; &nbsp; <input type="checkbox" class = "regular-checkbox" id="harmony" name = 7 value ="harmonyHerb"> Patches on Harmony Island </span><br>
+                    <span> &nbsp; &nbsp; <input type="checkbox" class = "regular-checkbox" id="troll" name = 8 value ="trollheimHerb"> Patche in Trollheim </span><br>
+                    <span> &nbsp; &nbsp; <input type="checkbox" class = "regular-checkbox" id="weiss" name = 9 value ="weissHerb"> Patch in Weiss </span><br>
+                </div>    
+            
+            <input type="checkbox" class = "regular-checkbox" id="trees" value="trees">Trees<br>
+                <div class = "treeLocations">
+                    <span> &nbsp; &nbsp; <input type="checkbox" class = "regular-checkbox" id="lumby" name = 10 value ="lumbridgeTree"> Lumbridge </span><br>
+                    <span> &nbsp; &nbsp; <input type="checkbox" class = "regular-checkbox" id="varrock" name = 11 value ="varrockTree"> Varrock Castle </span><br>
+                    <span> &nbsp; &nbsp; <input type="checkbox" class = "regular-checkbox" id="fally" name = 12 value ="fallyTree"> Falador Park </span><br>
+                    <span> &nbsp; &nbsp; <input type="checkbox" class = "regular-checkbox" id="taverly" name = 13 value ="taverleyTree"> Taverley </span><br>
+                    <span> &nbsp; &nbsp; <input type="checkbox" class = "regular-checkbox" id="treeStronghold" name = 14 value ="gnomeTree"> Tree Gnome Stronghold </span><br>
+                    <span> &nbsp; &nbsp; <input type="checkbox" class = "regular-checkbox" id="treeGuild" name = 15 value ="guildTree"> Farming Guild </span><br>
+                </div> 
+            <input type="checkbox" class = "regular-checkbox" id="fruitTrees" value="fruitTrees">Fruit Trees<br>
+                <div class = "fruitLocations">
+                    <span> &nbsp; &nbsp; <input type="checkbox" class = "regular-checkbox" id="fruitStronghold" name = 16 value ="strongholdFuit"> Tree Gnome Stronghold </span><br>
+                    <span> &nbsp; &nbsp; <input type="checkbox" class = "regular-checkbox" id="eCatherby" name = 17 value ="catherbyFruit"> East of Catherby </span><br>
+                    <span> &nbsp; &nbsp; <input type="checkbox" class = "regular-checkbox" id="gnomeMaze" name = 18 value ="mazeFruit"> West of Tree Gnome Maze </span><br>
+                    <span> &nbsp; &nbsp; <input type="checkbox" class = "regular-checkbox" id="brimhaven" name = 19 value ="brimhavenFruit"> North of Brimhaven </span><br>
+                    <span> &nbsp; &nbsp; <input type="checkbox" class = "regular-checkbox" id="lletya" name = 20 value ="lletyaFruit"> Lletya </span><br>
+                    <span> &nbsp; &nbsp; <input type="checkbox" class = "regular-checkbox" id="fruitGuild" name = 21 value ="guildFruit"> Farming Guild </span><br>
+                </div>
+            
+            <input type="submit" class = "generateButton" id="generateButton" value="Generate Teleport List">
+        </form>
+   
+    </div>
+
+
+
+
+<!-- <script src = "FarmGuide.js"></script> -->
+</body>
+</html>

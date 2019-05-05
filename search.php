@@ -31,6 +31,11 @@
         $varSpeed = $row[2];
         $dmgType = $row[3];
     }
+    /*
+    else{
+        die("No keyword submitted")
+    }
+    */
 
 
    
@@ -51,9 +56,9 @@
  	<header class="inner clearfix">
         <hgroup>
             <img id = "logo" src = "images/OSRS.png">
-           <h1 id="site-title"><a href="RunePal.html" title="Homepage">RunePal</a>
+           <h1 id="site-title"><a href="RunePal.php" title="Homepage">RunePal</a>
             </h1>
-            <h2 id="university-title"><a href="RunePal.html" title="Homepage">An OSRS Companion Website</a>
+            <h2 id="university-title"><a href="RunePal.php" title="Homepage">An OSRS Companion Website</a>
             </h2>
 	    <p id = "loginAndRegister">
                 <a id = "login" href = "login.php">Login</a> | <a id = "register" href = "register.php">Register</a>
@@ -74,7 +79,7 @@
     </div>
     <div id = "subNavBar"> 
         
-        <a href="http://student2.cs.appstate.edu/perdueca/RunePal/RunePal.html">Home</a> 
+        <a href="http://student2.cs.appstate.edu/perdueca/RunePal/RunePal.php">Home</a> 
         &#62;
         <a href="#">Prayer Flicking</a>
 

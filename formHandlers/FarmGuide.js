@@ -11,6 +11,7 @@ if(patchArr.length > 0){
         var form = document.createElement("form");
         form.method = "get";
         form.action = "teleForm.php";
+    
         document.body.appendChild(form);
         patchArr.forEach(element => {
             if(element.localeCompare("fallyHerb") == 0)
@@ -29,7 +30,7 @@ if(patchArr.length > 0){
                 form.appendChild(fallyPatch);
                 form.appendChild(s);
             }
-            if(element.localeCompare("ectoHerb") == 0)
+            else if(element.localeCompare("ectoHerb") == 0)
             { 
                 var div = document.createElement("div");
                 div.textContent = "Ectofuntus Herb Patch Teleports";
@@ -43,7 +44,7 @@ if(patchArr.length > 0){
                 form.appendChild(div);
                 form.appendChild(inputs);
             }
-            if(element.localeCompare("catherbyHerb") == 0)
+            else if(element.localeCompare("catherbyHerb") == 0)
             { 
                 let div = document.createElement("div");
                 div.textContent = "Catherby Herb Patch Teleports";
@@ -56,7 +57,7 @@ if(patchArr.length > 0){
                 form.appendChild(div);
                 form.appendChild(inputs);
             }
-            if(element.localeCompare("ardyHerb") == 0)
+            else if(element.localeCompare("ardyHerb") == 0)
             { 
                 var div = document.createElement("div");
                 div.textContent = "Ardougne Herb Patch Teleports";
@@ -72,7 +73,7 @@ if(patchArr.length > 0){
                 form.appendChild(div);
                 form.appendChild(inputs);
             } 
-            if(element.localeCompare("hosiHerb") == 0)
+            else if(element.localeCompare("hosiHerb") == 0)
             { 
                 var div = document.createElement("div");
                 div.textContent = "Hosidius Herb Patch Teleports";
@@ -86,7 +87,7 @@ if(patchArr.length > 0){
                 form.appendChild(div);
                 form.appendChild(inputs);
             }
-            if(element.localeCompare("guildHerb") == 0)
+            else if(element.localeCompare("guildHerb") == 0)
             { 
                 var div = document.createElement("div");
                 div.textContent = "Farming Guild Herb Patch Teleports";
@@ -100,7 +101,7 @@ if(patchArr.length > 0){
                 form.appendChild(div);
                 form.appendChild(inputs);
             }     
-            if(element.localeCompare("harmonyHerb") == 0)
+            else if(element.localeCompare("harmonyHerb") == 0)
             { 
                 var div = document.createElement("div");
                 div.textContent = "Harmony Herb Patch Teleports";
@@ -108,13 +109,11 @@ if(patchArr.length > 0){
 
                 inputs.innerHTML = '<input type = "radio" name = "harmonyHerbTeles" value = "harmonyTele"> Harmony Island Teleport <br>';
                 inputs.innerHTML += '<input type = "radio" name = "harmonyHerbTeles" value = "mosLeHarmlessScroll"> Mos Le\'Harmless Teleport Scroll  <br>';                  
-                inputs.innerHTML += '<input type = "radio" name = "harmonyHerbTeles" value = "ectophialHarmony"> Ectophial to Port Phasmatys to Mos Le\'Harmless to Brother Tanquility <br>';
-                inputs.innerHTML += '<input type = "radio" name = "harmonyHerbTeles" value = "troubleBrewingTele"> Teleport to Trouble Brewing to Brother Tranquility <br>';
 
                 form.appendChild(div);
                 form.appendChild(inputs);
             }
-            if(element.localeCompare("trollheimHerb") == 0)
+            else if(element.localeCompare("trollheimHerb") == 0)
             { 
                 let div = document.createElement("div");
                 div.textContent = "Trollheim Herb Patch Teleports";
@@ -122,26 +121,26 @@ if(patchArr.length > 0){
 
                 inputs.innerHTML = '<input type = "radio" name = "trollheimHerbTeles" value = "stonyBasaltTeleport"> Stony Basalt Teleport <br>';
                 inputs.innerHTML += '<input type = "radio" name = "trollheimHerbTeles" value = "trollheimTeleport"> Trollheim Teleport <br>';
-                inputs.innerHTML += '<input type = "radio" name = "trollheimHerbTeles" value = "gamesNecklaceBurthrope"> Games Necklace to Burthrope <br>';                  
+                //inputs.innerHTML += '<input type = "radio" name = "trollheimHerbTeles" value = "gamesNecklaceBurthrope"> Games Necklace to Burthrope <br>';                  
                
 
                 form.appendChild(div);
                 form.appendChild(inputs);
             }
-            if(element.localeCompare("weissHerb") == 0)
+            else if(element.localeCompare("weissHerb") == 0)
             { 
                 let div = document.createElement("div");
                 div.textContent = "Weiss Herb Patch Teleports";
                 let inputs = document.createElement("div");
 
                 inputs.innerHTML = '<input type = "radio" name = "weissHerbTeles" value = "icyBasaltTeleport"> Icy Basalt Teleport <br>';
-                inputs.innerHTML += '<input type = "radio" name = "weissHerbTeles" value = "weissFairyRing"> Fairy Ring DKS <br>';                  
+                inputs.innerHTML += '<input type = "radio" name = "weissHerbTeles" value = "weissFairyRing"> Fairy Ring DKS then take Larry\'s Boat<br>';                  
                
 
                 form.appendChild(div);
                 form.appendChild(inputs);
             }
-            if(element.localeCompare("lumbridgeTree") == 0)
+            else if(element.localeCompare("lumbridgeTree") == 0)
             { 
                 let div = document.createElement("div");
                 div.textContent = "Lumbridge Tree Patch Teleports";
@@ -154,7 +153,7 @@ if(patchArr.length > 0){
                 form.appendChild(div);
                 form.appendChild(inputs);
             }
-            if(element.localeCompare("varrockTree") == 0)
+            else if(element.localeCompare("varrockTree") == 0)
             { 
                 let div = document.createElement("div");
                 div.textContent = "Varrock Tree Patch Teleports";
@@ -167,7 +166,7 @@ if(patchArr.length > 0){
                 form.appendChild(div);
                 form.appendChild(inputs);
             }
-            if(element.localeCompare("fallyTree") == 0)
+            else if(element.localeCompare("fallyTree") == 0)
             { 
                 let div = document.createElement("div");
                 div.textContent = "Falador Tree Patch Teleports";
@@ -179,7 +178,7 @@ if(patchArr.length > 0){
                 form.appendChild(div);
                 form.appendChild(inputs);
             }
-            if(element.localeCompare("taverleyTree") == 0)
+            else if(element.localeCompare("taverleyTree") == 0)
             { 
                 let div = document.createElement("div");
                 div.textContent = "Taverley Tree Patch Teleports";
@@ -188,34 +187,33 @@ if(patchArr.length > 0){
                 inputs.innerHTML = '<input type = "radio" name = "taverleyTreeTeles" value = "balloonTransportTaverley"> Balloon Transport to Taverley <br>';
                 inputs.innerHTML += '<input type = "radio" name = "taverleyTreeTeles" value = "taverleyHouseTele"> Taverley House Teleport <br>';                  
                 inputs.innerHTML += '<input type = "radio" name = "taverleyTreeTeles" value = "taverleyGamesNecklace"> Games Necklace to Burthrope<br>';
-                inputs.innerHTML += '<input type = "radio" name = "taverleyTreeTeles" value = "fallyTeleTaverley"> Falador Teleport <br>';                  
+                //inputs.innerHTML += '<input type = "radio" name = "taverleyTreeTeles" value = "fallyTeleTaverley"> Falador Teleport <br>';                  
                 inputs.innerHTML += '<input type = "radio" name = "taverleyTreeTeles" value = "warriorsGuildCombat"> Warriors Guild Combat Bracelet Teleport <br>';
 
                 form.appendChild(div);
                 form.appendChild(inputs);
             }
-            if(element.localeCompare("gnomeTree") == 0)
+            else if(element.localeCompare("gnomeTree") == 0)
             { 
                 let div = document.createElement("div");
                 div.textContent = "Gnome Stronghold Tree Patch Teleports";
                 let inputs = document.createElement("div");
 
-                inputs.innerHTML = '<input type = "radio" name = "gnomeTreeTeles" value = "slayerRingTreed"> Slayer Ring to Stronghold <br>';
+                inputs.innerHTML = '<input type = "radio" name = "gnomeTreeTeles" value = "slayerRingTree"> Slayer Ring to Stronghold <br>';
                 inputs.innerHTML += '<input type = "radio" name = "gnomeTreeTeles" value = "strongholdSpiritTree"> Spirit Tree to Stronghold <br>';                  
-                inputs.innerHTML += '<input type = "radio" name = "gnomeTreeTeles" value = "balloonTransportStrongholdTree"> Balloon Transport to Stronghold<br>';
+                inputs.innerHTML += '<input type = "radio" name = "gnomeTreeTeles" value = "balloonStrongholdTree"> Balloon Transport to Stronghold<br>';
                 inputs.innerHTML += '<input type = "radio" name = "gnomeTreeTeles" value = "seedPodTree"> Grand/Royal Seed Pod <br>';                  
-                inputs.innerHTML += '<input type = "radio" name = "gnomeTreeTeles" value = "gnomeGliderStrongholdTree"> Gnome Glider to Stronghold <br>';
 
                 form.appendChild(div);
                 form.appendChild(inputs);
             }
-            if(element.localeCompare("guildTree") == 0)
+            else if(element.localeCompare("guildTree") == 0)
             { 
                 let div = document.createElement("div");
                 div.textContent = "Farming Guild Tree Patch Teleports";
                 let inputs = document.createElement("div");
 
-                inputs.innerHTML = '<input type = "radio" name = "guildTreeTeles" value = "treeSkillsFarming"> Skills Necklace to Farming Guild <br>';
+                inputs.innerHTML = '<input type = "radio" name = "guildTreeTeles" value = "herbSkillsFarming"> Skills Necklace to Farming Guild <br>';
                 inputs.innerHTML += '<input type = "radio" name = "guildTreeTeles" value = "treeFarmingCape"> Farming Cape Teleport <br>';                  
                 inputs.innerHTML += '<input type = "radio" name = "guildTreeTeles" value = "treeSpiritTree"> Farming Guild Spirit Tree <br>';
                 inputs.innerHTML += '<input type = "radio" name = "guildTreeTeles" value = "treeGuildFairy"> Fairy Ring CIR <br>';
@@ -223,22 +221,21 @@ if(patchArr.length > 0){
                 form.appendChild(div);
                 form.appendChild(inputs);
             }
-            if(element.localeCompare("strongholdFuit") == 0)
+            else if(element.localeCompare("strongholdFuit") == 0)
             { 
                 let div = document.createElement("div");
                 div.textContent = "Gnome Stronghold Fruit Tree Patch Teleports";
                 let inputs = document.createElement("div");
 
                 inputs.innerHTML = '<input type = "radio" name = "gnomeFruitTeles" value = "balloonStrongholdFruit"> Balloon Transport to Gnome Stronhold <br>';
-                inputs.innerHTML += '<input type = "radio" name = "gnomeFruitTeles" value = "strongholdSpiritTree"> Spirit Tree to Stronghold <br>';                  
+                inputs.innerHTML += '<input type = "radio" name = "gnomeFruitTeles" value = "spiritTreeStrongholdFruit"> Spirit Tree to Stronghold <br>';                  
                 inputs.innerHTML += '<input type = "radio" name = "gnomeFruitTeles" value = "seedPodFruit"> Grand/Royal Seed Pod<br>';
                 inputs.innerHTML += '<input type = "radio" name = "gnomeFruitTeles" value = "slayerRingFruit"> Slayer Ring to Stronghold <br>';                  
-                inputs.innerHTML += '<input type = "radio" name = "gnomeFruitTeles" value = "gnomeGliderStrongholdTree"> Gnome Glider to Stronghold <br>';
 
                 form.appendChild(div);
                 form.appendChild(inputs);
             }
-            if(element.localeCompare("catherbyFruit") == 0)
+            else if(element.localeCompare("catherbyFruit") == 0)
             { 
                 let div = document.createElement("div");
                 div.textContent = "Catherby Fruit Tree Patch Teleports";
@@ -251,7 +248,7 @@ if(patchArr.length > 0){
                 form.appendChild(div);
                 form.appendChild(inputs);
             }
-            if(element.localeCompare("mazeFruit") == 0)
+            else if(element.localeCompare("mazeFruit") == 0)
             { 
                 let div = document.createElement("div");
                 div.textContent = "Gnome Maze Fruit Tree Patch Teleports";
@@ -263,7 +260,7 @@ if(patchArr.length > 0){
                 form.appendChild(div);
                 form.appendChild(inputs);
             }
-            if(element.localeCompare("brimhavenFruit") == 0)
+            else if(element.localeCompare("brimhavenFruit") == 0)
             { 
                 let div = document.createElement("div");
                 div.textContent = "Brimhaven Fruit Tree Patch Teleports";
@@ -272,25 +269,23 @@ if(patchArr.length > 0){
                 inputs.innerHTML = '<input type = "radio" name = "brimhavenFruitTeles" value = "brimhavenHouseTele"> Brimhaven House Tele <br>';
                 inputs.innerHTML += '<input type = "radio" name = "brimhavenFruitTeles" value = "brimhavenSpiritTree"> Spirit Tree in Brimhaven <br>';                  
                 inputs.innerHTML += '<input type = "radio" name = "brimhavenFruitTeles" value = "brimhavenCharterShip"> Take any Chartership to Brimhaven<br>';
-                inputs.innerHTML += '<input type = "radio" name = "brimhavenFruitTeles" value = "karamjaGloves"> Karamja Gloves 3/4 then take Cart to Shilo Village <br>';                  
-                inputs.innerHTML += '<input type = "radio" name = "brimhavenFruitTeles" value = "brimhavenFairyRing"> Fairy Ring BJR <br>';
 
                 form.appendChild(div);
                 form.appendChild(inputs);
             }
-            if(element.localeCompare("lletyaFruit") == 0)
+            else if(element.localeCompare("lletyaFruit") == 0)
             { 
                 let div = document.createElement("div");
                 div.textContent = "Lletya Fruit Tree Patch Teleports";
                 let inputs = document.createElement("div");
 
                 inputs.innerHTML = '<input type = "radio" name = "lletyaFruitTeles" value = "teleportCrystal"> Teleport Crystal <br>';
-                inputs.innerHTML += '<input type = "radio" name = "lletyaFruitTeles" value = "elfCampTeleport"> Elf Camp Teleport Scroll (Not Recommended) <br>';                  
+                //inputs.innerHTML += '<input type = "radio" name = "lletyaFruitTeles" value = "elfCampTeleport"> Elf Camp Teleport Scroll (Not Recommended) <br>';                  
                 
                 form.appendChild(div);
                 form.appendChild(inputs);
             }
-            if(element.localeCompare("guildFruit") == 0)
+            else if(element.localeCompare("guildFruit") == 0)
             { 
                 let div = document.createElement("div");
                 div.textContent = "Farming Guild Fruit Tree Patch Teleports";
@@ -308,7 +303,7 @@ if(patchArr.length > 0){
             
     });
     var submitButton = document.createElement("div");
-    submitButton.innerHTML = '<input type = "submit" value = "submit form">'
+    submitButton.innerHTML = '<input type = "submit" class = "generateButton" value = "Generate Farming Guide">'
     form.appendChild(submitButton)
 }
 }

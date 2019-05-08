@@ -102,9 +102,45 @@ nav{
     font-size: 24px;
      
 }
+.generateButton{
+    z-index: 10;    
+    
+      /*margin-left: 40%; */
+    width: 300px;
+    border:0;
+    border-radius: 10px;
+    line-height: 2.5;
+    padding: 10px 10px;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    background-color: #8b0000;
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+.generateButton:hover{
+    background-color: #2d2d2d;
+}
 
 .formHead:hover{
     cursor: pointer;
+    
+}
+.formHead{
+    display: block;
+    position: relative;
+    padding-left: 30%;
+    margin-bottom: 12px; 
+    font-size: 22px;
+
 }
 
-
+form{
+    
+    display: block;
+    position: relative;
+    /*padding-left: 30%;*/
+    margin-bottom: 12px; 
+    font-size: 22px;
+}

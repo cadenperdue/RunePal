@@ -1,3 +1,4 @@
+
 var speed = document.getElementById("attkSpeed").textContent;
 var name = document.getElementById("name").textContent;
 var type = document.getElementById("attackType").textContent;
@@ -62,7 +63,6 @@ function displayIcon(){
         }, false);
     
 }
-
 
 
 displayIcon();

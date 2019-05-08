@@ -53,15 +53,20 @@
     
     
     <h2 id = "IRD">Welcome To Our Prayer Flicking Guide</h2>
-    
+    <div id = "flexContent">
     <form action="search.php" method="get">
         <label>
-            Search
+            <h3> Enter the name of the mosnter you'll be fighting below</h3>
+            <br>
             <input type="text" name="keywords" autocomplete="off">
+            <br>
+            <br> 
+            <br>
          </label>
 
-         <input type="submit"  value="Submit">
+         <input type="submit" class = "generateButton" value="Search">
     </form>
+</div>
     
 </body>
 </html>

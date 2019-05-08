@@ -69,11 +69,11 @@
     <div>
     <nav>
         <ul id = "navBar">
-        <li class = "liNav" id = "firstli"><a href = "FarmGuide.html">Farming</a></li>
-         <li class = "liNav"><a href = "STASHUnit.html">STASHUnits</a></li>
+        <li class = "liNav" id = "firstli"><a href = "FarmGuide.php">Farming</a></li>
+         <li class = "liNav"><a href = "STASHUnit.php">STASHUnits</a></li>
          <li class = "liNav"><a href = "PrayFlick.php">Flicking</a></li>
-         <li class = "liNav"><a href="About.html">About</a></li>
-        <li class = "liNav"><a href="Contact.html">Contact</a></li>
+         <li class = "liNav"><a href="About.php">About</a></li>
+        <li class = "liNav"><a href="Contact.php">Contact</a></li>
         </ul>
     </nav>
     </div>
@@ -90,9 +90,21 @@
 
 
 	    <div class = "result-count">
-        	Found <?php echo $query->num_rows; ?> results for <span id = "name"> <?php echo $name; ?> </span> with attack speed equal to<span id = "attkSpeed"> <?php echo $attkSpeed; ?> </span>.
+            Found <?php echo $query->num_rows; ?> results  
+            <?php if($query->num_rows > 0){
+                    echo "for <span id = 'name'>". $name . "</span>  with attack speed equal to <span id = 'attkSpeed'>" . $attkSpeed . "</span>"; 
+                    echo "<br>";
+                    echo "This creature attacks with <span id = 'attackType'>" . $dmgType . "</span>";
+                    echo "<br>";
+                    echo "Click the image just before you attack your enemy to begin the sequence";
+            }?>   
+            <?php //echo $attkSpeed; ?>
             <br>
-            This creature attacks with <span id = "attackType"><?php echo $dmgType; ?></span>             
+           <!--
+                <span id = 'name'><?php echo $name; ?></span>
+                <span id = 'attkSpeed'><?php echo $attkSpeed; ?></span>
+                <span id = "attackType"> <?php echo $dmgType; ?> </span>
+        -->          
     	</div>
             
         <div id = "icon"></div>

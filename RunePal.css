@@ -1,11 +1,11 @@
 @font-face{
-    font-family: runescape;
-    src: url('runescape_uf.ttf');
+    font-family: 'runescape';
+    src: url('fonts/runescape_uf.ttf') format('truetype');
 }
 *{
     margin: 0px;
     padding: 0px;
-    font-family: "runescape", Helvetica;
+    font-family: 'runescape', Helvetica;
 }
 body{
     background-color: #D3D3D3;

@@ -91,7 +91,7 @@
     <p>
 	<?php
 	    if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-        	echo "Welcome to the member's area, " . $_SESSION['username'] . "!";
+        	echo "<h2> Welcome to the member's area, " . $_SESSION['username'] . "! </h2>";
 		    $name = $_SESSION['username'];
         	$idNum = $_SESSION['id'];
         	$row = [];
@@ -126,7 +126,10 @@
                         SELECT mas1, mas2, mas3, mas4, mas5, mas6, mas7, mas8, mas9, mas10, mas11, mas12, mas13, mas14, mas15, mas16, mas17, mas18, mas19, mas20, mas21
                     	FROM users WHERE username = \"$name\"
                    	 ");
-       		$masterArr = mysqli_fetch_array($query, MYSQLI_NUM);
+               $masterArr = mysqli_fetch_array($query, MYSQLI_NUM);
+                     
+        
+          
         }
                
                
@@ -134,7 +137,7 @@
 
  
     	    else {
-        		echo "Please log in if you want your data to be saved.";
+        		echo "<h2>Please log in if you want your data to be saved.</h2>";
            	 }
             
             
@@ -177,11 +180,8 @@
                 <input type = "checkbox" name = "es27" value = 27 class = "ez" id = "lumber"> Lumber Yard <br>
 				<input type = "checkbox" name = "es28" value = 28 class = "ez" id = "court"> Varrock Palace Courtyard <br>
                 <input type = "checkbox" name = "es29" value = 29 class = "ez" id = "ge"> GE Entrance <br>
-                <input type = "submit" id = "easySubmit" value = "Update Easy List">
-            </form> 
-           
-        
- 
+                <input type = "submit" id = "easySubmit" class = "generateButton" value = "Update Easy List">
+            </form>  
     </div> 
     <div id = "mediumStash" class = "formHead">
         Click here for medium STASHs
@@ -209,7 +209,7 @@
 			<input type = "checkbox" name = "ms21" value = 21 class = "med" id = "shayComb"> Shayzien Combat Ring <br>
             <input type = "checkbox" name = "ms22" value = 22 class = "med" id = "drayJail"> Draynor Jail <br>
 			<input type = "checkbox" name = "ms23" value = 23 class = "med" id = "mtKarN"> Mount Karuulm <br>
-            <input type = "submit" id = "mediumSubmit" value = "Update Medium List">
+            <input type = "submit" id = "mediumSubmit" class = "generateButton" value = "Update Medium List">
         </form>
     </div>
     <div id = "hardStash" class = "formHead" >
@@ -230,7 +230,7 @@
 			<input type = "checkbox" name = "hs13" value = 13 class = "hard" id = "taiGrove"> White Wolf Mountain <br>
             <input type = "checkbox" name = "hs14" value = 14 class = "hard" id = "barbAgil"> Wilderness Volcano <br>
 			<input type = "checkbox" name = "hs15" value = 15 class = "hard" id = "yaniBank"> Agility Pyramid Course <br>
-            <input type = "submit" id = "hardSubmit" value = "Update Hard List">
+            <input type = "submit" id = "hardSubmit" class = "generateButton" value = "Update Hard List">
         </form>
     </div>
     <div id = "eliteStash"  class = "formHead">
@@ -252,7 +252,7 @@
             <input type = "checkbox" name = "els14" value = 14 class = "elite" id = "trollFlo"> Trollweiss Flowers <br>
 			<input type = "checkbox" name = "els15" value = 15 class = "elite" id = "legGuild"> Legends Guild <br>
             <input type = "checkbox" name = "els16" value = 16 class = "elite" id = "fightBar"> Fight Arena Bar <br>
-            <input type = "submit" id = "eliteSubmit" value = "Update Elite List">
+            <input type = "submit" id = "eliteSubmit" class = "generateButton"  value = "Update Elite List">
         </form>
     </div>
     <div id = "masterStash" class = "formHead" >
@@ -279,7 +279,7 @@
 			<input type = "checkbox" name = "mas18" value = 19 class = "mas" id = "courthouse"> Queen Ellamaria's Garden <br>
             <input type = "checkbox" name = "mas20" value = 20 class = "mas" id = "telEquip"> Yanille Watchtower  <br>
 			<input type = "checkbox" name = "mas21" value = 21 class = "mas" id = "shayComb"> Behind Miss Schism <br>
-            <input type = "submit" id = "masterSubmit" value = "Update Master List">
+            <input type = "submit" id = "masterSubmit" class = "generateButton" value = "Update Master List">
         </form>
     </div>
     <p id = "test">
